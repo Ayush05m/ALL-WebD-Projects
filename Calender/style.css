@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background: #141414;
+    color: white; */
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #d6d3d3;
+    position: relative;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 30px;
+}
+
+.calendar-grid > div {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: right;
+    height: 70px;
+    width: 70px;
+}
+
+.calendar-grid div:hover {
+    background-color: #e9e8e8;
+    /* color: #141414; */
+    font-weight: bolder;
+}
+
+.empty-cell {
+    color: #9f9d9d;
+}
+
+.change-btn {
+    font-size: 15px;
+}
+
+.today {
+    font-weight: bolder;
+    background: #faf8f8 ;
+}
+
+.popup{
+    align-items: center;
+    border: 1px solid #a7a6a6;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    left: 300px;
+    top: 200px;
+    max-width: 800px;
+    width: 400px;
+    padding: 30px;
+    position: absolute;
+    transition: all 1s;
+    background-color: white;
+    /* transform: translateY(-1000px); */
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.eventTime{
+    align-items: flex-start;
+    /* width: 100%; */
+    border: 1px solid #000;
+    display: flex;
+}
+
+input,label {
+    display: flex;
+    margin-top: 10px;
+}
+
+label{
+    font-size: 18px;
+}
+
+
+
+#formSubmitBtn{
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+    
+}
+
+.translateY {
+    transition: all 1.5s;
+    transform: translateY(0);
+}
+
+.labeled {
+    /* display: none; */
+    font-weight: bold;
+    color: blue;
+    /* height: 50px;
+    margin-top: 10px;
+    width: 80px; */
+}
+
+.calendar-grid div:hover .labeled{
+    background: #faf5f5;
+    border: 1px solid #b1b0b0;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+
+
+
+

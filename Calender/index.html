@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Event Calendar</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prev-month" class="change-btn">&#9664;</button>
+                <span id="current-month-year"></span>
+                <button id="next-month" class="change-btn">&#9654;</button>
+            </div>
+            <div class="calendar-grid" id="calendar-grid"></div>
+        </div>
+        <div class="popup ">
+            <div class="popup-inner-div">
+                <h2>Event Details</h2>
+                <div class="close">&#10006</div>
+                <div class="form-container">
+                    <form action="" class="form">
+                        <label for="eventsN">Event Name: </label>
+                        <input type="text" name="eventName" id="eventsN">
+                        <label for="eventsT">Time</label>
+                        <div class="eventTime">
+                            <label for="eventsT">From:</label>
+                            <input type="time" name="fromEventTime" id="eventsFT">
+                            <label for="eventsT">To:</label>
+                            <input type="time" name="toEventTime" id="eventsTT">
+                        </div>
+                        <label for="eventsD">Event Details link:</label>
+                        <input type="url" name="eventDetails" id="eventsD">
+                        <input type="submit" name="submitBtn" id="formSubmitBtn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+
+
+</body>
+
+</html>
